@@ -1,8 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+
+
+body {
+    font-family:"Lato bold", sans-serif;
+    font-size:16px;
+    font-weight:300;
+    background-color:#E9EAEE;
+}
+
+.aboutBackground {
+  width: 100%;
+  height: 100%;
+}
+
 #cssmenu {
-  background: #f96e5b;
+  /* background: #f96e5b; */
+  background: black;
   width: auto;
 }
+
 #cssmenu ul {
   list-style: none;
   margin: 0;
@@ -11,6 +28,7 @@
   display: block;
   zoom: 1;
 }
+
 #cssmenu ul:after {
   content: " ";
   display: block;
@@ -19,6 +37,7 @@
   clear: both;
   visibility: hidden;
 }
+
 #cssmenu ul li {
   display: inline-block;
   padding: 0;
@@ -30,6 +49,7 @@
 #cssmenu.align-center ul {
   text-align: center;
 }
+
 #cssmenu ul li a {
   color: #ffffff;
   text-decoration: none;
@@ -72,12 +92,8 @@
   height: 3px;
   width: 0;
   background: #333333;
-  -webkit-transition: width .25s;
-  -moz-transition: width .25s;
-  -ms-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;
 }
+
 #cssmenu ul li.last > a:after,
 #cssmenu ul li:last-child > a:after {
   display: none;
@@ -102,6 +118,7 @@
   }
   #cssmenu ul li a {
     width: 100%;
+    text-align: center;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
