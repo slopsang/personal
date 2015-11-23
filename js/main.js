@@ -2,32 +2,43 @@ var myApp = angular.module('myApp', ['ui.router'])
 
 myApp.config(function($stateProvider) {
     $stateProvider
-        .state('home', {
+        .state('dawg-coffee', {
             url: '/',
-            templateUrl: 'templates/landing.html',
-            controller: 'HomeController'
+            templateUrl: 'templates/dawg-coffee.html',
+            controller: 'DawgController'
         })
-        .state('content', {
-            url: '/content',
-            templateUrl: 'templates/content.html',
-            controller: 'ContentController'
+        .state('police-shooting', {
+            url: '/police-shooting',
+            templateUrl: 'templates/police-shooting.html',
+            controller: 'PoliceController'
         })
-        .state('about', {
-            url: '/about',
-            templateUrl: 'templates/about.html',
-            controller: 'AboutController'
+        .state('spotify', {
+            url: '/spotify',
+            templateUrl: 'templates/spotify.html',
+            controller: 'SpotifyController'
         })
 })
 
 // Landing page controller: define $scope.number as a number
-myApp.controller('HomeController', function($scope) {
-    $scope.number = 6
+myApp.controller('DawgController', function($scope) {
+    $scope.number = 1
+    //$scope.url = "http://students.washington.edu/sangkim1/info343/dawg-coffee/"
 })
 
-myApp.controller('AboutController', function($scope) {
-    $scope.about = "Some info"
+myApp.controller('PoliceController', function($scope) {
+    $scope.number = 2
+    //$scope.url = "http://students.washington.edu/sangkim1/info343/police-shooting/"
 })
 
-myApp.controller('ContentController', function($scope) {
-    $scope.url = "http://www.tattoosforyou.org/wp-content/uploads/2013/09/Mystic-Owl-Tattoo.jpg"
+myApp.controller('SpotifyController', function($scope) {
+    $scope.number = 3
+    //$scope.url = "http://students.washington.edu/sangkim1/info343/spotify-template/"
+})
+
+Papa.parse("../proj", {
+    download: true,
+    header: true,
+    complete: function(projects) {
+        console.log(projects);
+    }
 })

@@ -1,23 +1,157 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 
 body {
-    font-family:"Lato bold", sans-serif;
-    font-size:16px;
-    font-weight:300;
-    background-color:#E9EAEE;
+  font-family: "proxima-nova"; 
+  font-weight: normal; 
+  font-style: normal; 
+  font-size:20px;
+  background-color:white;
+  width: 100vw;
+  height: 100vh;
+}
+h2 {
+  margin-top: 0;
+  text-align: left;
+  padding: 50px;
+  font-family: "proxima-nova";
+  font-size: 35px;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-style: normal;
+}
+#home {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#homeImg {
+  background-image: url(../img/effeltower.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: right;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#myImg {
+  background-image: url(../img/myFace.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 100px;
+  left: 500px;
 }
 
-div #home {
-  background-image: url("../img/la.jpg");
-  height: 100vh;
-  background-size: 400px;
-  background-repeat: none;
+#myImg p { 
+  position: absolute; 
+  margin-top: 310px;
+  margin-left: 80px;
+  border: none;
+  color: white;
+  font-family: "proxima-nova";
+  font-weight: normal; 
+  font-style: normal; 
+  font-size: 30px;
 }
+
+#myImg h3 {
+  margin-left: 50px;
+  margin-top: 350px;
+  margin-left: 20px;
+  border: none;
+  color: white;
+  font-family: "proxima-nova";
+  font-weight: normal; 
+  font-style: normal; 
+  font-size: 26px;
+}
+#about {
+  background-image: url(../img/fall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+#about p {
+  padding-top: 140px;
+  font-size: 25px;
+}
+
+#projects {
+  background-image: url(../img/cube.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+#buttons a {
+  background-color: transparent;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#showcase {
+  height: 100%; 
+}
+#resume {
+  background-image: url(../img/mac.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: center;
+}
+#contact {
+  color: black;
+}
+#icons {
+  margin-left: 400px;
+  margin-bottom: 100px;
+}
+#contact a {
+  padding: 50px;
+}
+
+#buttons {
+  text-align: center;
+}
+
+.ng-scope {
+  float: center;
+  text-align: center;
+}
+
+/*.sticker {
+width: 50px;
+height: 50px;
+}
+.sticker-img {
+background-color: white;
+}
+.sticker-shadow {
+opacity: 0.6;
+}*/
+
 
 #cssmenu {
-  /* background: #f96e5b; */
   background: black;
-  width: auto;
+  width: 100vw;
+  /* position: fixed; */ 
 }
 
 #cssmenu ul {
@@ -27,10 +161,10 @@ div #home {
   line-height: 1;
   display: block;
   zoom: 1;
-
+  float: right;
 }
 
-#cssmenu ul:after {
+#cssmenu ul:before {
   content: " ";
   display: block;
   font-size: 0;
@@ -41,14 +175,9 @@ div #home {
 
 #cssmenu ul li {
   display: inline-block;
+  float: right;
   padding: 0;
   margin: 0;
-}
-#cssmenu.align-right ul li {
-  float: right;
-}
-#cssmenu.align-center ul {
-  text-align: center;
 }
 
 #cssmenu ul li a {
@@ -61,18 +190,92 @@ div #home {
   text-transform: uppercase;
   font-size: 14px;
   position: relative;
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -ms-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
 }
+
 #cssmenu ul li a:hover {
   color: #333333;
 }
 #cssmenu ul li a:hover:before {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  h2 {
+    padding: 30px;
+    font-size: 15px;
+  }
+  #about p {
+    padding-top: 10px;
+    font-size: 10px;
+  }
+  #home {
+    height: 50%;
+  }
+  #homeImg {
+    height:100%;
+  }
+  #myImg {
+    height: 150px;
+    width: 150px;
+    top: 50px;
+    left: 320px;
+  }
+
+  #myImg p { 
+    margin-top: 150px;
+    margin-left: 40px;
+    font-size: 15px;
+  }
+
+  #myImg h3 {
+    margin-top: 170px;
+    margin-left: 30px;
+    font-size: 10px;
+  }
+
+  #about {
+    background-image: url(../img/road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    color: white;
+    text-align: center;
+  }
+  #projects {
+    height: 50%;
+  }
+  #resume {
+    height: 50%;
+  }
+  #icons {
+    margin-left: 100px;
+    margin-bottom: 500px;
+  }
+  #contact a {
+    padding: 25px;
+  }
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}
+/* deal with it later
+
 #cssmenu ul li a:after {
   content: "";
   display: block;
@@ -84,6 +287,7 @@ div #home {
   background: #ffffff;
   opacity: .5;
 }
+
 #cssmenu ul li a:before {
   content: "";
   display: block;
@@ -99,6 +303,10 @@ div #home {
 #cssmenu ul li:last-child > a:after {
   display: none;
 }
+*/
+
+
+/*
 #cssmenu ul li.active a {
   color: #333333;
 }
@@ -136,6 +344,7 @@ div #home {
     display: none;
   }
 }
+*/
 
 /*
 body {
