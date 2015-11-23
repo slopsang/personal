@@ -6,7 +6,7 @@
 
 2. Did you receive help from any other sources (classmates, etc.)? If so, please list who.
 
-- 
+- I worked with Julian.
 
 3. Approximately how many hours did it take you to complete this challenge?
 
