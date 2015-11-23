@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 
 body {
-  font-family: "proxima-nova"; 
+  font-family: "proxima-nova", sans-serif;
   font-weight: normal; 
   font-style: normal; 
   font-size:20px;
@@ -34,7 +34,7 @@ h2 {
   height: 100vh;
   color: white;
   text-align: right;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -43,35 +43,22 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  width: 300px;
-  height: 300px;
-  top: 100px;
-  left: 500px;
-}
-
-#myImg p { 
-  position: absolute; 
-  margin-top: 310px;
-  margin-left: 80px;
-  border: none;
-  color: white;
-  font-family: "proxima-nova";
-  font-weight: normal; 
-  font-style: normal; 
-  font-size: 30px;
+  width: 350px;
+  height: 350px;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, 100%);
 }
 
 #myImg h3 {
-  margin-left: 50px;
-  margin-top: 350px;
-  margin-left: 20px;
+  position: absolute;
+  width: 400px;
+  top: 100%;
   border: none;
   color: white;
-  font-family: "proxima-nova";
-  font-weight: normal; 
-  font-style: normal; 
-  font-size: 26px;
+  font-size: 35px;
 }
+
 #about {
   background-image: url(../img/fall.jpg);
   background-repeat: no-repeat;
@@ -81,9 +68,10 @@ h2 {
   color: white;
   text-align: center;
 }
+
 #about p {
-  padding-top: 140px;
-  font-size: 25px;
+  margin-top:30%;
+  font-size: 30px;
 }
 
 #projects {
@@ -96,18 +84,20 @@ h2 {
   text-align: center;
 }
 
-#buttons a {
-  background-color: transparent;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  border: 2px solid #fff;
-  color: #fff;
+#projectPhotos {
+  margin-bottom: 30px;
+  height: 300px;
+  width: 300px;
+}
+#projectDescriptions {
+  color: black;
+  padding-top: 10px;
+}
+#projectDescriptions h3 {
+  margin-top: 0;
 }
 
-#showcase {
-  height: 100%; 
-}
-#resume {
+#contact {
   background-image: url(../img/mac.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,13 +105,11 @@ h2 {
   height: 100vh;
   color: white;
   text-align: center;
+  color: white;
 }
-#contact {
-  color: black;
-}
+
 #icons {
-  margin-left: 400px;
-  margin-bottom: 100px;
+  margin-top: 20%;
 }
 #contact a {
   padding: 50px;
@@ -136,16 +124,10 @@ h2 {
   text-align: center;
 }
 
-/*.sticker {
-width: 50px;
-height: 50px;
+.projPics {
+  width: 100px;
+  height: 100px;
 }
-.sticker-img {
-background-color: white;
-}
-.sticker-shadow {
-opacity: 0.6;
-}*/
 
 
 #cssmenu {
@@ -198,7 +180,7 @@ opacity: 0.6;
 #cssmenu ul li a:hover:before {
   width: 100%;
 }
-
+/*
 @media screen and (max-width: 768px) {
   h2 {
     padding: 30px;
@@ -274,6 +256,14 @@ opacity: 0.6;
     display: none;
   }
 }
+
+*/
+
+
+
+
+
+
 /* deal with it later
 
 #cssmenu ul li a:after {

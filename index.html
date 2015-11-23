@@ -25,81 +25,26 @@
 
 	<body>
 
-	<div id="cssmenu" class="container">
-	    <nav id="mainNav" class="navbar navbar-fixed-top">
-			<ul class="nav navbar-nav">
-				<!-- <li id="logo"><img src="img/logo.png"></li> -->
-				<!--
-				<li><a href="#home">HOME</a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#projects">PROJECTS</a></li>
-				<li><a href="#resume">RESUME</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-				-->
-				<li><a href="#contact">CONTACT</a></li>
-				<li><a href="#resume">RESUME</a></li>
-				<li><a href="#projects">PROJECTS</a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#home">HOME</a></li>
-			</ul>
-		</nav>		
-	</div>
-		
+	<div ng-app="myApp">
 
-
-	<!-- Home -->
-	<div id="home">
-		<div id="homeImg"></div>
-		<div id="myImg">
-			<p id="first">Hi, I'm Sang.<br></p>
-			<h3>Welcome to my portfolio.</h3>
+		<div id="cssmenu" class="container">
+		    <nav id="mainNav" class="navbar navbar-fixed-top">
+				<ul class="nav navbar-nav">
+					<!-- <li id="logo"><img src="img/logo.png"></li> -->
+					<li><a ui-sref="contact">CONTACT</a></li>
+					<li><a ui-sref="projects">PROJECTS</a></li>
+					<li><a ui-sref="about">ABOUT</a></li>
+					<li><a ui-sref="home">HOME</a></li>
+				</ul>
+			</nav>		
 		</div>
-	</div>
-	<!-- About -->
-	<div id="about">
-		<h2>About Me<h2>
-		<p>Hi, my name is Sang and I live in Seattle, Washington. <br>I enjoy creating new things, meeting new people, and experiencing new stuff. I am from Seoul, South Korea. I trained more than 3,000 people as a drill sergeant in the army for 2 years. Now, I am a 3rd year student at University of Washington and I study the relationship between information, technology, and people.</p>
+
+		<div ui-view></div>
+
 	</div>
 
-	<!-- Projects -->
-	<div id="projects">
-		<div id="showcase">
-			<h2>projects</h2>
-			<div ng-app="myApp">
-				<div id="buttons">
-					<!-- target="_blank" is to open in a new tab -->
-					<a class="btn btn-default" ui-sref="dawg-coffee">Dawg-Coffee</a>
-			        <a class="btn btn-default" ui-sref="police-shooting">Police-shooting</a>
-			        <a class="btn btn-default" ui-sref="spotify">Spotify</a>
-		        </div>
-		        <div id="showProj" class="container">
-		    		<div ui-view></div>
-		    	</div>
-		    </div>
-	    </div>
-	</div>
+		<!-- target="_blank" is to open in a new tab -->
 
-	<!-- Resume -->
-	<div id="resume" class="container">
-		<h2>resume</h2>
-	</div>
-
-	<!-- Contact -->
-	<div id="contact">
-		<h2>contact</h2>
-		<div id="icons">
-			<a href="http://www.facebook.com/sangouk" target="_blank">
-			<img id="fb" src="img/fb.png" alt="Go to my Facebook page" width="60" height="60" border="0" >
-			</a>
-			<a href="https://www.instagram.com/sangoukim/" target="_blank">
-			<img src="img/instagram.png" alt="Go to my Instagram page" width="60" height="60" border="0" >
-			</a>
-			<a href="https://www.linkedin.com/profile/view?id=AAkAABoJ4ywBNOK_EqIDFqf1V-sccql-WlUCgXw&authType=NAME_SEARCH&authToken=n6pK&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A436855596%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1448243331686%2Ctas%3Asang%20ouk" target="_blank">
-			<img src="img/linkedin.png" alt="Go to my Linkedin page" width="75" height="75" border="0" >
-			</a>
-		</div>
-	</div>
-	
 	</body>
 
 </html>
