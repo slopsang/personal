@@ -24,14 +24,12 @@ myApp.config(function($stateProvider) {
         })
 })
 
-// Landing page controller: define $scope.number as a number
 myApp.controller('HomeController', function($scope) {
     
 })
 
 myApp.controller('AboutController', function($scope) {
-    $scope.number = 2
-    //$scope.url = "http://students.washington.edu/sangkim1/info343/police-shooting/"
+
 })
 
 myApp.controller('ProjectsController', function($scope) {
@@ -43,16 +41,25 @@ myApp.controller('ProjectsController', function($scope) {
             $scope.projects = projects.data;
         }
     })
-    //$scope.url = "http://students.washington.edu/sangkim1/info343/spotify-template/"
 })
 
 myApp.controller('ContactController', function($scope) {
-    $scope.number = 3
-    //$scope.url = "http://students.washington.edu/sangkim1/info343/spotify-template/"
+
 })
 
+$( document ).ready(function(){
+    $(".button-collapse").sideNav();
+});
 
+// var currentIndex = 0,
+//   items = $('.container div'),
+//   itemAmt = items.length;
 
+// function cycleItems() {
+//   var item = $('.container div').eq(currentIndex);
+//   items.hide();
+//   item.css('display','inline-block');
+// }
 
 /*
 
