@@ -1,4 +1,4 @@
-# Pesonal Portfolio
+# Personal Portfolio
 
 1. What is the URL of this project on your student web-server?
 
