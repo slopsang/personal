@@ -11,76 +11,48 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+		
 		<!-- Add materialize library -->
-		<!-- Compiled and minified CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css" />
-		<!-- Compiled and minified JavaScript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<!-- Add ui-router library -->
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
 		<!-- Custom code -->
 		<link href="css/main.css" rel="stylesheet" type="text/css" />
 		<script src="js/main.js" type="text/javascript"></script>
 		<script src="js/papaparse.min.js" type="text/javascript"></script>
-
-		<!-- Fonts -->
-		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/unique" type="text/css"/>
 	</head>
 
 	<body>
+		<div ng-app="myApp">
+			<div id="cssmenu" class="container">
+			    <nav id="mainNav" class="navbar navbar-fixed-top">
+					<div class="nav-wrapper">
+						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+						<ul class="nav navbar-nav right hide-on-med-and-down">
+							<li><a ui-sref="contact">CONTACT</a></li>
+							<li><a ui-sref="projects">PROJECTS</a></li>
+							<li><a ui-sref="about">ABOUT</a></li>
+							<li><a ui-sref="home">HOME</a></li>
+						</ul>
+						<ul class="side-nav" id="mobile-demo">
+							<li><a class="mobile" ui-sref="home">HOME</a></li>
+							<li><a class="mobile" ui-sref="about">ABOUT</a></li>
+							<li><a class="mobile" ui-sref="projects">PROJECTS</a></li>
+							<li><a class="mobile" ui-sref="contact">CONTACT</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 
-	<div ng-app="myApp">
-
-		<div id="cssmenu" class="container">
-		    <nav id="mainNav" class="navbar navbar-fixed-top">
-				<div class="nav-wrapper">
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					<ul class="nav navbar-nav right hide-on-med-and-down">
-						<!-- <li id="logo"><img src="img/logo.png"></li> -->
-						<li><a ui-sref="contact">CONTACT</a></li>
-						<li><a ui-sref="projects">PROJECTS</a></li>
-						<li><a ui-sref="about">ABOUT</a></li>
-						<li><a ui-sref="home">HOME</a></li>
-					</ul>
-					<ul class="side-nav" id="mobile-demo">
-						<li><a class="mobile" ui-sref="home">HOME</a></li>
-						<li><a class="mobile" ui-sref="about">ABOUT</a></li>
-						<li><a class="mobile" ui-sref="projects">PROJECTS</a></li>
-						<li><a class="mobile" ui-sref="contact">CONTACT</a></li>
-					</ul>
-				</div>
-			</nav>
+			<div ui-view></div>
+			
 		</div>
-
-		<div ui-view></div>
-
-	</div>
-
-		<!-- target="_blank" is to open in a new tab -->
-
 	</body>
 
 </html>
 
 
-<!-- 
-
-
-		<div id="cssmenu" class="container">
-		    <nav id="mainNav" class="navbar navbar-fixed-top">
-				<div class="nav-wrapper">
-					<ul class="nav navbar-nav">
-						<!-- <li id="logo"><img src="img/logo.png"></li> -->
-						<!--
-						<li><a ui-sref="contact">CONTACT</a></li>
-						<li><a ui-sref="projects">PROJECTS</a></li>
-						<li><a ui-sref="about">ABOUT</a></li>
-						<li><a ui-sref="home">HOME</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-
-	-->
